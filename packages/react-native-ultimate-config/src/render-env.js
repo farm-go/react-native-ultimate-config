@@ -58,6 +58,7 @@ function render_template(template_name, data) {
 module.exports = function render_env(project_root, lib_root, env, rc) {
   const { ios, android, web } = env;
   const map = {
+    [path.join(lib_root, "index.js")]: render_template("index.js", ios),
     [path.join(lib_root, "index.d.ts")]: render_template("index.d.ts", ios),
     [path.join(lib_root, "index.web.js")]: render_template("index.web.js", web),
     [path.join(lib_root, "ios", `${code_file_name}.h`)]: render_template(

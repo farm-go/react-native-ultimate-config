@@ -72,5 +72,13 @@
   "resolutions": {
     "logkitty": "^0.7.1",
     "lodash": "^4.17.19"
-  }
+  },
+  "codegenConfig": {
+     "name": "RNUltimateConfigSpec",
+     "type": "modules",
+     "jsSrcsDir": "./src/fabric",
+     "android": {
+       "javaPackageName": "com.reactnativeultimateconfig"
+     }
+   }
 }
